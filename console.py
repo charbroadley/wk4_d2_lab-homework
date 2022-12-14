@@ -42,6 +42,10 @@ import repositories.artist_repository as artist_repository
 # for album in album_list:
 #     print(album.__dict__)
 
-artist_list = artist_repository.select_all()
-for artist in artist_list:
-    print(artist.__dict__)
+# artist_list = artist_repository.select_all()
+# for artist in artist_list:
+#     print(artist.__dict__)
+
+album_list = album_repository.select_albums_by_artist("Prince")
+for album in album_list:
+    print(album.__dict__)
